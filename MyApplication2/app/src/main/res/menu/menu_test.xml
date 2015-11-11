@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_launcher"
+        android:title="@string/font_size">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/font_10"
+                    android:title="@string/font_10"
+                    android:onClick="onItemClick"
+                    />
+                <item
+                    android:id="@+id/font_12"
+                    android:title="@string/font_12" />
+                <item
+                    android:id="@+id/font_14"
+                    android:title="@string/font_14" />
+                <item
+                    android:id="@+id/font_16"
+                    android:title="@string/font_16" />
+                <item
+                    android:id="@+id/font_18"
+                    android:title="@string/font_18" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/plain_item"
+        android:title="@string/plain_item"/>
+    <item
+        android:id="@+id/font_color"
+        android:title="@string/font_color"
+        android:icon="@drawable/ic_launcher">
+        <menu>
+            <group
+                android:checkableBehavior="all">
+                <item
+                    android:id="@+id/font_color_red"
+                    android:title="@string/font_color_red"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/font_color_blue"
+                    android:title="@string/font_color_blue"
+                    android:checkable="true"/>
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="@string/menu_setting"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView">
+    </item>
+    <item
+        android:id="@+id/clock"
+        android:showAsAction="always"
+        android:title="@string/menu_setting"
+        android:actionLayout="@layout/clock"></item>
+</menu>

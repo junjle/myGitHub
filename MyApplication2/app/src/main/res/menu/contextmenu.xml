@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_font"
+        android:icon="@drawable/ic_launcher"
+        android:title="字体">
+        <group
+            >
+            <item
+                android:id="@+id/context_font10"
+                android:icon="@drawable/ic_launcher"
+                android:title="10号字体"></item>
+            <item
+                android:id="@+id/context_font12"
+                android:icon="@drawable/ic_launcher"
+                android:title="12号字体"></item>
+            <item
+                android:id="@+id/context_font14"
+                android:icon="@drawable/ic_launcher"
+                android:title="14号字体"></item>
+        </group>
+    </item>
+</menu>
